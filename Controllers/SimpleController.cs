@@ -29,7 +29,7 @@ namespace ssdugpresentation.Controllers
 
            return Json(new {
                 env = new { samplevar =_config.Get("samplevar") },
-                config = new {}
+                config = new {configvar = _config.Get("configvar")}
             });
         }
 
@@ -37,7 +37,7 @@ namespace ssdugpresentation.Controllers
         {
             User user = new User()
             {
-                Name = "My name",
+                Name = "SSDUG GROUP",
                 Address = "My address",
                 Age = 77
             };
